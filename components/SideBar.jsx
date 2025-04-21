@@ -1,0 +1,58 @@
+'use client';
+
+import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
+import { useState } from 'react';
+
+const SideBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div>
+      <button className='cursor-pointer' onClick={() => setIsOpen(true)}>
+        <Menu className='size-7' />
+      </button>
+      {isOpen && (
+        <div className={`w-[60%] max-w-[400px] h-dvh px-6 pt-24 bg-white shadow-2xl fixed top-0 right-0`}>
+          <button className='cursor-pointer' onClick={() => setIsOpen(false)}>
+            <X className='size-7 absolute top-4 right-4' />
+            <ul className='flex flex-col items-start gap-6 text-nowrap'>
+              <li>
+                <Link href={'/'}>Home</Link>
+              </li>
+              <li>
+                <Link href={'/about'}>About</Link>
+              </li>
+              <li>
+                <Link href={'/current-issue'}>Current Issue</Link>
+              </li>
+              <li>
+                <Link href={'/archives'}>Archives</Link>
+              </li>
+              <li>
+                <Link href={'/guidelines'}>Guidelines</Link>
+              </li>
+              <li>
+                <Link href={'/guidelines/author-guidelines'}>Author Guidelines</Link>
+              </li>
+              <li>
+                <Link href={'/guidelines/reviewer-guidelines'}>Reviewer Guidelines</Link>
+              </li>
+              <li>
+                <Link href={'/editorial-board'}>Editorial Board</Link>
+              </li>
+              <li>
+                <Link href={'/faqs'}>FAQs</Link>
+              </li>
+              <li>
+                <Link href={'/contact'}>Contact</Link>
+              </li>
+              <button className='bg-[var(--royal-blue)] text-white py-2 px-6 text-sm text-nowrap cursor-pointer'>Publish with Us</button>
+            </ul>
+          </button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default SideBar;

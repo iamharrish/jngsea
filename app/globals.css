@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+:root {
+	--royal-blue: #385fb3;
+	--royal-yellow: #f6dd80;
+}
+
+@theme inline {
+	--royal-blue: var(--royal-blue);
+	--royal-yellow: var(--royal-yellow);
+}
