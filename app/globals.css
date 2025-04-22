@@ -9,3 +9,11 @@
 	--royal-blue: var(--royal-blue);
 	--royal-yellow: var(--royal-yellow);
 }
+
+.font-sans {
+	font-family: var(--font-nunito);
+}
+
+.font-serif {
+	font-family: var(--font-playfair-display);
+}
