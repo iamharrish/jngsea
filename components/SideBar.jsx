@@ -12,7 +12,7 @@ const SideBar = () => {
         <Menu className='size-7' />
       </button>
       {isOpen && (
-        <div className={`w-[60%] max-w-[400px] h-dvh px-6 pt-24 bg-white shadow-2xl fixed top-0 right-0`}>
+        <div className={`w-[60%] max-w-[400px] h-dvh px-6 pt-24 bg-white shadow-2xl fixed top-0 right-0 z-5000`}>
           <button className='cursor-pointer' onClick={() => setIsOpen(false)}>
             <X className='size-7 absolute top-4 right-4' />
             <ul className='flex flex-col items-start gap-6 text-nowrap'>
@@ -27,9 +27,6 @@ const SideBar = () => {
               </li>
               <li>
                 <Link href={'/archives'}>Archives</Link>
-              </li>
-              <li>
-                <Link href={'/guidelines'}>Guidelines</Link>
               </li>
               <li>
                 <Link href={'/guidelines/author-guidelines'}>Author Guidelines</Link>

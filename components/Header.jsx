@@ -25,7 +25,7 @@ const Header = () => {
             <Link href={'/archives'}>Archives</Link>
           </li>
           <li>
-            <Link href={'/guidelines'}>Guidelines</Link>
+            <Link href={'/guidelines/author-guidelines'}>Guidelines</Link>
           </li>
           <li>
             <Link href={'/editorial-board'}>Editorial Board</Link>
