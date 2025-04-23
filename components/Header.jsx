@@ -36,7 +36,9 @@ const Header = () => {
           <li>
             <Link href={'/contact'}>Contact</Link>
           </li>
-          <button className='bg-[var(--royal-blue)] text-white py-2 px-6 text-sm text-nowrap cursor-pointer'>Publish with Us</button>
+          <Link href={'/guidelines/author-guidelines/submission'}>
+            <button className='bg-[var(--royal-blue)] text-white py-2 px-6 text-sm text-nowrap cursor-pointer'>Publish With Us</button>
+          </Link>
         </ul>
         {/* Mobile */}
         <div className='xl:hidden'>

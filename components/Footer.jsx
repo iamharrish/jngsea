@@ -22,7 +22,7 @@ const Footer = () => {
             <Link href={'/guidelines/author-guidelines'}>Author Guidelines</Link>
             <Link href={'/guidelines/reviewer-guidelines'}>Reviewer Guidelines</Link>
             <Link href={'/writing-tips'}>Writing Tips</Link>
-            <Link href={'/submission'}>Publish With Us</Link>
+            <Link href={'/guidelines/author-guidelines/submission'}>Publish With Us</Link>
           </div>
         </div>
         <div className='w-full space-y-3'>
